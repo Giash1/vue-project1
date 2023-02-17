@@ -1,11 +1,15 @@
-<script setup></script>
+<script>
+export default {
+  props: ["title"],
+};
+</script>
 <template>
   <div class="Garments1">
-    <h1>Asian Garments Items</h1>
+    <h1>{{ title }}</h1>
   </div>
 </template>
-<style scoped>
-.Grossary1 {
+<style lang="scss" scoped>
+.Garments1 {
   color: black;
   font-size: 30px;
   font-weight: bolder;

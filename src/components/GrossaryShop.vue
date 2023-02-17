@@ -1,9 +1,15 @@
-<script setup></script>
 <template>
   <div class="Grossary1">
-    <h1>Asian Grossary Items</h1>
+    <h1>{{ heading }}</h1>
+    <!-- sending this props to the branch as well-->
   </div>
 </template>
+<script>
+export default {
+  name: "GrossaryShop",
+  props: ["heading"],
+};
+</script>
 <style scoped>
 .Grossary1 {
   color: black;

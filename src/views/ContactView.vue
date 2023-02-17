@@ -111,7 +111,7 @@ export default {
     flex-direction: column;
     margin-top: 30px;
   }
-  form{
+  form {
     display: grid;
     row-gap: 10px;
   }
@@ -144,5 +144,4 @@ export default {
     background-color: #30db12;
   }
 }
-
 </style>
