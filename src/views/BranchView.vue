@@ -7,12 +7,13 @@
       <section class="branches">
         <router-link to="/GrossaryShop" class="router">
           <!-- Bringing props from Garments products -->
-          <GrossaryShop heading="Asian Grossary Products" class="router-1" />
+           <!-- making another kind of props as well (header)-->
+          <GrossaryShop heading="Asian Grossary Products" :header="header" class="router-1" />
         </router-link>
-        <br>
         <router-link to="/GarmentsProducts" class="router">
           <!-- Bringing props from Garments products -->
-          <GarmentsProducts title="Asian Garments Products" class="router-2" />
+          <!-- making another kind of props as well -->
+          <GarmentsProducts title="Asian Garments Products" :header="header" class="router-2" />
         </router-link>
       </section>
 
@@ -34,6 +35,7 @@ export default {
   data() {
     return {
       details: "More about our products:",
+      header: "We have planed to sale more items of products",
     };
   },
 };
@@ -41,10 +43,9 @@ export default {
 
 <style lang="scss" scoped>
 .branch {
-
-    margin: 10px 70px 0px 70px;
-    height: 680px;
-    width: 82%;
+  margin: 10px 70px 0px 70px;
+  height: 680px;
+  width: 82%;
 
   .branch-1 {
     align-items: center;
@@ -61,23 +62,22 @@ export default {
     font-size: 40px;
     margin-top: 40px;
   }
-.branches{
+  .branches {
     display: flex;
     flex-direction: row;
     gap: 30px;
     margin-top: -80px;
-}
+  }
 
-.details{
-    p{
-        font-size: 20px;
-        font-weight: bold;
-        line-break: 20px;
+  .details {
+    p {
+      font-size: 20px;
+      font-weight: bold;
+      line-break: 20px;
     }
-    h2{
-        margin-top: 40px;
+    h2 {
+      margin-top: 40px;
     }
-}
-
+  }
 }
 </style>

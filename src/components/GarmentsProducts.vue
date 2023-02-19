@@ -1,13 +1,17 @@
-<script>
-export default {
-  props: ["title"],
-};
-</script>
 <template>
   <div class="Garments1">
     <h1>{{ title }}</h1>
+    <p>{{ header }}</p>
   </div>
 </template>
+
+<script>
+export default {
+  name: "GarmentsProducts",
+  props: ['title', 'header'],
+};
+</script>
+
 <style lang="scss" scoped>
 .Garments1 {
   color: black;

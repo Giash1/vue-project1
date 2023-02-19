@@ -1,13 +1,14 @@
 <template>
   <div class="Grossary1">
     <h1>{{ heading }}</h1>
+    <p>{{ header }}</p>
     <!-- sending this props to the branch as well-->
   </div>
 </template>
 <script>
 export default {
   name: "GrossaryShop",
-  props: ["heading"],
+  props: ["heading", "header"],
 };
 </script>
 <style scoped>
