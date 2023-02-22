@@ -8,7 +8,7 @@
 <script>
 export default {
   name: "GarmentsProducts",
-  props: ['title', 'header'],
+  props: ["title", "header"],
 };
 </script>
 

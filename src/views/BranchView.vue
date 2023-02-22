@@ -7,13 +7,21 @@
       <section class="branches">
         <router-link to="/GrossaryShop" class="router">
           <!-- Bringing props from Garments products -->
-           <!-- making another kind of props as well (header)-->
-          <GrossaryShop heading="Asian Grossary Products" :header="header" class="router-1" />
+          <!-- making another kind of props as well (header)-->
+          <GrossaryShop
+            heading="Asian Grossary Products"
+            :header="header"
+            class="router-1"
+          />
         </router-link>
         <router-link to="/GarmentsProducts" class="router">
           <!-- Bringing props from Garments products -->
           <!-- making another kind of props as well -->
-          <GarmentsProducts title="Asian Garments Products" :header="header" class="router-2" />
+          <GarmentsProducts
+            title="Asian Garments Products"
+            :header="header"
+            class="router-2"
+          />
         </router-link>
       </section>
 

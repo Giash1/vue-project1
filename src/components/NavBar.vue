@@ -52,6 +52,15 @@
             <li class="nav-item">
               <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
             </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/member">Log in</RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/register">Register</RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/mypage">My Page</RouterLink>
+            </li>
           </ul>
         </div>
       </div>
@@ -74,5 +83,8 @@ nav {
 }
 .navbar-toggler {
   background-color: rgb(50, 155, 21);
+}
+.nav-link {
+  color: black;
 }
 </style>

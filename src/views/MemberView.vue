@@ -1,27 +1,33 @@
 <template>
   <div class="myside">
     <section class="myside-1">
-      <h1>Membership</h1>
-      <p>
-        <router-link to="/">Home</router-link>
-      </p>
-      <p>
-        <router-link to="/member">Login</router-link>
-      </p>
-      <p>
-        <router-link to="/register">Register</router-link>
-      </p>
+      <h1 style="padding-left: 10px">Membership</h1>
+      <section class="router-link">
+        <p>
+          <router-link to="/" class="router-link-1">Home</router-link>
+        </p>
+        <p>
+          <router-link to="/member" class="router-link-1">Login</router-link>
+        </p>
+        <p>
+          <router-link to="/register" class="router-link-1"
+            >Register</router-link
+          >
+        </p>
+      </section>
+
       <div>
         <hr />
       </div>
     </section>
     <section class="contact-1">
-        <h3 style="text-align: center;">Go to my Page</h3>
-        <p style="font-size: 30px; text-align: center;">Already have an account ? just log in</p>
+      <h3 style="text-align: center">To go to my Page</h3>
+      <p style="font-size: 30px; text-align: center">
+        Already have an account ? just log in
+      </p>
       <div class="container">
         <form action="" prevent>
           <h1>Login</h1>
-
 
           <label for="email"> Email Address</label>
           <input
@@ -29,7 +35,6 @@
             id="email"
             name="email"
             placeholder="Obligatory..."
-
           />
           <label for="phone"> Password</label>
           <input
@@ -37,9 +42,7 @@
             id="phone"
             name="phone"
             placeholder="Obligatory..."
-
           />
-
         </form>
         <div class="checkbox-1">
           <label for="checkbox"> Accept the terms and conditions</label>
@@ -61,13 +64,18 @@
             </section>
           </div> -->
         <br />
+        <div class="login-register">
+          <router-link to="/mypage" @click="aboutClick" class="router-link-2">
+            Login
+          </router-link>
 
-        <router-link to="/mypage" @click="aboutClick"> Login </router-link>
-        <div class="register">
-            <p style="font-size: 20px; padding-left: 20px;"> Don't have any account ?</p>
-          <router-link to="/register" style="padding-left: 160px; font-size: 20px;">Register</router-link>
+          <p style="font-size: 20px; padding-left: 20px">
+            Don't have any account ?
+          </p>
+          <router-link to="/register" class="router-link-2"
+            >Register</router-link
+          >
         </div>
-
       </div>
     </section>
   </div>
@@ -77,10 +85,7 @@
 `import·{·RouterLink,·RouterView·}·from·"vue-router";`;
 export default {
   data() {
-      return {
-
-
-      };
+    return {};
   },
   computed: {
     prod() {
@@ -97,12 +102,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.router-link {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  gap: 260px;
+  padding-left: 10px;
+
+  .router-link-1 {
+    color: black;
+    font-size: 20px;
+  }
+}
+
 .contact-1 {
   h3 {
     padding: 3rem;
     font-size: 3rem;
     color: rgb(26, 30, 239);
   }
+
   .container {
     width: 400px;
     margin: auto;
@@ -111,6 +130,7 @@ export default {
     flex-direction: column;
     margin-top: 30px;
   }
+
   form {
     display: grid;
     row-gap: 10px;
@@ -137,33 +157,38 @@ export default {
     box-sizing: border-box;
     background-color: #21b6f5;
   }
-  button {
+  //   button {
+  //     background-color: #2091f9;
+  //     color: black;
+  //     border: none;
+  //     border-radius: 50px;
+  //     padding: 12px;
+  //     cursor: pointer;
+  //   }
+  //   button:hover {
+  //     background-color: #30db12;
+  //   }
+}
+
+.checkbox-1 {
+  margin-top: 20px;
+}
+.login-register {
+  display: flex;
+  flex-direction: column;
+  .router-link-2 {
     background-color: #2091f9;
     color: black;
     border: none;
     border-radius: 50px;
     padding: 12px;
     cursor: pointer;
-  }
-  button:hover {
-    background-color: #30db12;
-  }
-}
-.display {
-  h1 {
     text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
   }
-  display: flexbox;
-  margin-top: 30px;
-  text-align: start;
-  border: solid rgba(10, 10, 10, 0.556);
-  background: #2091f9;
-  border-radius: 12px;
-  height: auto;
-  padding-left: 20px;
-}
-
-.display:hover {
-  background-color: #30db12;
+  p {
+    margin-top: 10px;
+  }
 }
 </style>
