@@ -6,27 +6,28 @@ import ContactView from "../views/ContactView.vue";
 import MemberView from "../views/MemberView.vue";
 import RegisterView from "../views/RegisterView.vue";
 import MyPageView from "../views/MyPageView.vue";
+import SearchView from "../views/SearchView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
-      name: "Home",
+      name: "/",
       component: HomeView,
     },
     {
       path: "/about",
-      name: "About",
+      name: "about",
       component: AboutView,
     },
     {
       path: "/branch",
-      name: "Branch",
+      name: "branch",
       component: BranchView,
     },
     {
       path: "/contact",
-      name: "Contact",
+      name: "contact",
       component: ContactView,
     },
     {
@@ -43,6 +44,11 @@ const router = createRouter({
       path: "/mypage",
       name: "mypage",
       component: MyPageView,
+    },
+    {
+      path: "/search",
+      name: "search",
+      component: SearchView,
     },
   ],
 });
