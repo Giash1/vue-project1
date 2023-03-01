@@ -13,8 +13,7 @@
         {{ index + 1 }}. {{ item.name }} {{ "=" }} {{ item.price }}
       </div>
 
-      <div v-if!="itemsMissing" class="item-missing">{{ itemsMissing }}
-      </div>
+      <div v-if!="itemsMissing" class="item-missing">{{ itemsMissing }}</div>
     </div>
   </div>
 </template>
@@ -51,16 +50,14 @@ export default {
       return this.items;
     },
   },
-//   methods: {
-//     itemsMissing(){
-//         if(!this.searching ===
-//         this.itemsList.length){
-//            alert("Item not found") ;
-//         }
+  //   methods: {
+  //     itemsMissing(){
+  //         if(!this.searching ===
+  //         this.itemsList.length){
+  //            alert("Item not found") ;
+  //         }
 
-
-
-//     }
-//   },
+  //     }
+  //   },
 };
 </script>

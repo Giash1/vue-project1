@@ -4,9 +4,9 @@
   <!-- <RouterLink to ="/"> Home</RouterLink> -->
   <!-- <RouterLink to ="/about"> About</RouterLink> -->
 
-  <nav class="navbar bg-body-tertiary fixed-top">
+  <nav class="navbar bg-body-tertiary fixed-top" style="margin-left: 20px;">
     <div class="container-fluid">
-      <RouterLink class="navbar-brand" to="/"
+      <RouterLink class="navbar-brand" to="/" style="margin-left: -15px;"
         >Brothers Enterprise Limited Sweden AB</RouterLink
       >
       <div style="display: flex; flex-direction: column">
@@ -68,7 +68,9 @@
             <RouterLink class="nav-link" to="/about">About</RouterLink>
           </li>
           <li class="nav-item">
-            <RouterLink class="nav-link" to="/branch">Branch</RouterLink>
+            <RouterLink class="nav-link" to="/catagories"
+              >Catagories
+            </RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/contact">Contact</RouterLink>

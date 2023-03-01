@@ -27,7 +27,9 @@
 
       <section class="details">
         <h2>{{ details }}</h2>
-        <p># Our company give you the best products with money back garranty</p>
+        <p>
+          # Our company gives you the best products with money back garranty
+        </p>
         <p># You will get the good services as well</p>
         <p># You have opportunity to make a complain as well</p>
       </section>

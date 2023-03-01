@@ -1,12 +1,14 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
-import BranchView from "../views/BranchView.vue";
+import CatagoriesView from "../views/ProCatagoryView.vue/CatagoriesView.vue";
+import CatagoryDetailsView from "../views/ProCatagoryView.vue/CatagoryDetailsView.vue";
 import ContactView from "../views/ContactView.vue";
 import MemberView from "../views/MemberView.vue";
 import RegisterView from "../views/RegisterView.vue";
 import MyPageView from "../views/MyPageView.vue";
 import SearchView from "../views/SearchView.vue";
+import ExistPageView from "../views/ExistPageView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -21,9 +23,15 @@ const router = createRouter({
       component: AboutView,
     },
     {
-      path: "/branch",
-      name: "branch",
-      component: BranchView,
+      path: "/catagories",
+      name: "catagories",
+      component: CatagoriesView,
+    },
+    {
+      path: "/catagories/:id",
+      name: "catagoryDetails",
+      component: CatagoryDetailsView,
+      props: true,
     },
     {
       path: "/contact",
@@ -49,6 +57,19 @@ const router = createRouter({
       path: "/search",
       name: "search",
       component: SearchView,
+    },
+    // redirective will be used as a path instead of a current path
+    // {
+    //   path: "/all-search",
+    //   name: "search",
+    //   component: SearchView,
+
+    // },
+    // catchall 404
+    {
+      path: "/:catchAll(.*)",
+      name: "existpage",
+      component: ExistPageView,
     },
   ],
 });
