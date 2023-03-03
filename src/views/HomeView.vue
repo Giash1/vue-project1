@@ -8,7 +8,7 @@
     </div>
     <h2>scroll down</h2>
     <a href="#scroll-down">
-      <img class="down" src="../assets/down.svg" alt="" />
+      <img class="down" src="/images/down.svg" alt="" />
     </a>
     <div class="middle">
       <article class="products">
@@ -37,17 +37,17 @@
     <hr class="solid" />
     <div class="bottom-main" id="scroll-down">
       <article class="mission-1">
-        <img src="../assets/vision.new.jpg" alt="" />
+        <img src="/images/vision.new.jpg" alt="" />
         <h3>Vision</h3>
         <p>Everyone can find their choosen products.</p>
       </article>
       <article class="mission-2">
-        <img src="../assets/mission.new.jpg" alt="" />
+        <img src="/images/mission.new.jpg" alt="" />
         <h3>Mission</h3>
         <p>We will open sevarel branches in the Stockholm area.</p>
       </article>
       <article class="mission-3">
-        <img src="../assets/values.new.jpg" alt="" />
+        <img src="/images/values.new.jpg" alt="" />
         <h3>Values</h3>
         <p>You will get the refresh products with good quality</p>
       </article>
@@ -67,7 +67,7 @@ export default {
   padding-top: 9rem;
   width: 100%;
   height: 800px;
-  background-image: url(../assets/supermarket.jpg);
+  background-image: url(/images/supermarket.jpg);
   background-position: center;
   background-size: cover;
 
@@ -141,15 +141,15 @@ h2 {
     }
 
     .rice {
-      background-image: url("../assets/pro.1.jpg");
+      background-image: url("/images/pro.1.jpg");
       background-position: center top;
     }
     .fish {
-      background-image: url("../assets/pro.2.jpg");
+      background-image: url("/images/pro.2.jpg");
       background-position: center top;
     }
     .meat {
-      background-image: url("../assets/pro.3.jpg");
+      background-image: url("/images/pro.3.jpg");
       background-position: center bottom;
     }
   }

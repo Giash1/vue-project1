@@ -1,0 +1,126 @@
+{
+  "grossaries": [
+    {
+      "id": 1,
+      "title": "rice",
+      "price": "100kr/kg",
+      "img": "../images/rice.jpg"
+    },
+    {
+      "id": 2,
+      "title": "fish",
+      "price": "110kr/kg",
+      "img": "../images/Fish.jpg"
+    },
+    {
+      "id": 3,
+      "title": "oil",
+      "price": "102kr/kg",
+      "img": "../images/oil.jpg"
+    },
+    {
+      "id": 4,
+      "title": "snacks",
+      "price": "103kr/kg",
+      "img": "../images/snacks.jpg"
+    },
+    {
+      "id": 5,
+      "title": "vegetables",
+      "price": "104kr/kg",
+      "img": "../images/vegetables.jpg"
+    },
+    {
+      "id": 6,
+      "title": "meat",
+      "price": "106kr/kg",
+      "img": "../images/meat.jpg"
+    },
+    {
+      "id": 7,
+      "title": "juice",
+      "price": "103kr/kg",
+      "img": "../images/juice.png"
+    },
+    {
+      "id": 8,
+      "title": "fruits",
+      "price": "130kr/kg",
+      "img": "../images/fruits.jpg"
+    },
+    {
+      "id": 9,
+      "title": "sweets",
+      "price": "104kr/kg",
+      "img": "../images/sweets.jpg"
+    },
+    {
+      "id": 10,
+      "title": "spices",
+      "price": "120kr/kg",
+      "img": "../images/spices.jpg"
+    }
+  ],
+  "garments": [
+    {
+      "id": 11,
+      "title": "shirt",
+      "price": "150kr/kg",
+      "img": "../images/t-shirt.jpg"
+    },
+    {
+      "id": 12,
+      "title": "pant",
+      "price": "107kr/kg",
+      "img": "../images/pent.jpg"
+    },
+    {
+      "id": 13,
+      "title": "cap",
+      "price": "107kr/kg",
+      "img": "../images/cap.jpg"
+    },
+    {
+      "id": 14,
+      "title": "panjabi",
+      "price": "700kr/kg",
+      "img": "../images/panjabi.jpg"
+    },
+    {
+      "id": 15,
+      "title": "tajbi",
+      "price": "108kr/kg",
+      "img": "../images/tajbi.jpg"
+    },
+    {
+      "id": 16,
+      "title": "three peace",
+      "price": "600kr/kg",
+      "img": "../images/three peaces.jpg"
+    },
+    {
+      "id": 17,
+      "title": "sweater",
+      "price": "800kr/kg",
+      "img": "../images/sweater.jpg"
+    },
+    {
+      "id": 18,
+      "title": "short pant",
+      "price": "400kr/kg",
+      "img": "../images/short pant.jpg"
+    },
+    {
+      "id": 19,
+      "title": "shari",
+      "price": "1060kr/kg",
+      "img": "../images/shari.jpg"
+    },
+    {
+      "id": 20,
+      "title": "nokhsikatha",
+      "price": "1000kr/kg",
+      "img": "../images/nokhsikatha.jpg"
+    }
+  ]
+}

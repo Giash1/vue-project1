@@ -4,16 +4,16 @@
   <!-- <RouterLink to ="/"> Home</RouterLink> -->
   <!-- <RouterLink to ="/about"> About</RouterLink> -->
 
-  <nav class="navbar bg-body-tertiary fixed-top" style="margin-left: 20px;">
+  <nav class="navbar bg-body-tertiary fixed-top" style="margin-left: 20px">
     <div class="container-fluid">
-      <RouterLink class="navbar-brand" to="/" style="margin-left: -15px;"
+      <RouterLink class="navbar-brand" to="/" style="margin-left: -15px"
         >Brothers Enterprise Limited Sweden AB</RouterLink
       >
       <div style="display: flex; flex-direction: column">
         <router-link to="/search">
           <p>
             <img
-              src="../assets/search-client.png"
+              src="../../public/images/search-client.png"
               alt=""
               style="width: 100px; height: 100px"
             />
@@ -70,6 +70,14 @@
           <li class="nav-item">
             <RouterLink class="nav-link" to="/catagories"
               >Catagories
+            </RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/garments">Garments </RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/grossaries"
+              >Grossaries
             </RouterLink>
           </li>
           <li class="nav-item">

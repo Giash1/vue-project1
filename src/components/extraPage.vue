@@ -37,8 +37,8 @@
   </div>
 </template>
 <script>
-import GrossaryShop from "../components/GrossaryShop.vue";
-import GarmentsProducts from "../components/GarmentsProducts.vue";
+import GrossaryShop from "../views/ProCatagoryView.vue/GrossariesProducts.vue";
+import GarmentsProducts from "../views/ProCatagoryView.vue/GarmentsProducts.vue";
 export default {
   name: "BranchView",
   components: { GrossaryShop, GarmentsProducts },
@@ -50,6 +50,22 @@ export default {
   },
 };
 </script>
+
+{ "Grosary": [ {"id": 1, "title": "rice","details": "typicode"}, {"id": 2,
+"title": "fish","details": "typicode"}, {"id": 3, "title": "oil","details":
+"typicode"}, {"id": 4, "title": "snacks","details": "typicode"}, {"id": 5,
+"title": "vegetables","details": "typicode"}, {"id": 6, "title":
+"meet","details": "typicode"}, {"id": 7, "title": "juice","details":
+"typicode"}, {"id": 8, "title": "fruits","details": "typicode"}, {"id": 9,
+"title": "sweet","details": "typicode"}, {"id": 10, "title": "spice","details":
+"typicode"} ], "Garments": [ {"id": 11, "title": "shirt","details": "typicode"},
+{"id": 12, "title": "pent","details": "typicode"}, {"id": 13, "title":
+"cap","details": "typicode"}, {"id": 14, "title": "panjabi","details":
+"typicode"}, {"id": 15, "title": "tajbi","details": "typicode"}, {"id": 16,
+"title": "tree peace","details": "typicode"}, {"id": 17, "title":
+"sweater","details": "typicode"}, {"id": 18, "title": "short pent","details":
+"typicode"}, {"id": 19, "title": "shari","details": "typicode"}, {"id": 20,
+"title": "nokhsikatha","details": "typicode"} ] }
 
 <style lang="scss" scoped>
 .branch {

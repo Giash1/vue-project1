@@ -9,6 +9,8 @@ import RegisterView from "../views/RegisterView.vue";
 import MyPageView from "../views/MyPageView.vue";
 import SearchView from "../views/SearchView.vue";
 import ExistPageView from "../views/ExistPageView.vue";
+import GarmentsProducts from "../views/ProCatagoryView.vue/GarmentsProducts.vue";
+import GrossariesProducts from "../views/ProCatagoryView.vue/GrossariesProducts.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -32,6 +34,16 @@ const router = createRouter({
       name: "catagoryDetails",
       component: CatagoryDetailsView,
       props: true,
+    },
+    {
+      path: "/garments",
+      name: "garments",
+      component: GarmentsProducts,
+    },
+    {
+      path: "/grossaries",
+      name: "grossaries",
+      component: GrossariesProducts,
     },
     {
       path: "/contact",

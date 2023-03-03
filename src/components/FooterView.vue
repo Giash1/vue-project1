@@ -4,7 +4,7 @@
       <article class="sub-container1">
         <img
           class="img1"
-          src="../assets/logo-supermarket.new.jpg"
+          src="/images/logo-supermarket.new.jpg"
           alt="super-market"
         />
         <p>{{ message }}</p>
@@ -30,7 +30,7 @@
                 "
               >
                 <img
-                  src="../assets/facebook.png"
+                  src="/images/facebook.png"
                   alt="facebook"
                   style="width: 20px; height: 20px"
                 />
@@ -47,7 +47,7 @@
                 "
               >
                 <img
-                  src="../assets/twitter.png"
+                  src="/images/twitter.png"
                   alt=""
                   style="width: 20px; height: 20px"
                 />
@@ -64,7 +64,7 @@
                 "
               >
                 <img
-                  src="../assets/Instragram.jpg"
+                  src="/images/Instragram.jpg"
                   alt=""
                   style="width: 20px; height: 20px"
                 />Instagram
@@ -80,7 +80,7 @@
                 "
               >
                 <img
-                  src="../assets/whatsapp.png"
+                  src="/images/whatsapp.png"
                   alt=""
                   style="width: 20px; height: 20px"
                 />Whatsapp
@@ -88,6 +88,7 @@
             >
           </div>
         </section>
+        .
       </div>
     </div>
   </div>
