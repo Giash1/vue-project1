@@ -65,61 +65,61 @@
     {
       "id": 11,
       "title": "shirt",
-      "price": "150kr/kg",
+      "price": "150kr/st",
       "img": "../images/t-shirt.jpg"
     },
     {
       "id": 12,
       "title": "pant",
-      "price": "107kr/kg",
+      "price": "107kr/st",
       "img": "../images/pent.jpg"
     },
     {
       "id": 13,
       "title": "cap",
-      "price": "107kr/kg",
+      "price": "107kr/st",
       "img": "../images/cap.jpg"
     },
     {
       "id": 14,
       "title": "panjabi",
-      "price": "700kr/kg",
+      "price": "700kr/st",
       "img": "../images/panjabi.jpg"
     },
     {
       "id": 15,
       "title": "tajbi",
-      "price": "108kr/kg",
+      "price": "108kr/st",
       "img": "../images/tajbi.jpg"
     },
     {
       "id": 16,
       "title": "three peace",
-      "price": "600kr/kg",
+      "price": "600kr/st",
       "img": "../images/three peaces.jpg"
     },
     {
       "id": 17,
       "title": "sweater",
-      "price": "800kr/kg",
+      "price": "800kr/st",
       "img": "../images/sweater.jpg"
     },
     {
       "id": 18,
       "title": "short pant",
-      "price": "400kr/kg",
+      "price": "400kr/st",
       "img": "../images/short pant.jpg"
     },
     {
       "id": 19,
       "title": "shari",
-      "price": "1060kr/kg",
+      "price": "1060kr/st",
       "img": "../images/shari.jpg"
     },
     {
       "id": 20,
       "title": "nokhsikatha",
-      "price": "1000kr/kg",
+      "price": "1000kr/st",
       "img": "../images/nokhsikatha.jpg"
     }
   ]

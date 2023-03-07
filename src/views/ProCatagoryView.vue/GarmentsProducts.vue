@@ -1,18 +1,22 @@
 <template>
-  <div class="router-link">
-    <div>Return to: <router-link to="/catagories">Catagories</router-link></div>
-    <div>Return to: <router-link to="/grossaries">Grossaries Products</router-link></div>
-  </div>
-  <div class="Garments1">
+  <div class="graments">
+    <div class="router-link">
+      <div>Return to: <router-link to="/catagories">Catagories</router-link></div>
+      <div>
+        Return to: <router-link to="/grossaries">Grossaries Products</router-link>
+      </div>
+    </div>
     <h1>{{ title }}</h1>
-    <div v-for="garment in garments" :key="garment.id" class="garment">
-      <h2>
-        {{ garment.title }} {{ "." }}
-        {{ garment.price }}
-      </h2>
-      <img v-bind:src="garment.img" alt="" class="img" />
-      <br />
-      <router Link class="btn" @click="onClick" type="button" to="/mypage">Buy</router>
+    <div class="Garments1">
+      <div v-for="garment in garments" :key="garment.id" class="garment">
+        <h2>
+          {{ garment.title }} {{ "." }}
+          {{ garment.price }}
+        </h2>
+        <img v-bind:src="garment.img" alt="" class="img" />
+        <br />
+        <router Link class="btn" @click="onClick" type="button" to="/mypage">Buy</router>
+      </div>
     </div>
   </div>
 </template>
@@ -47,11 +51,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+body {
+  width: 1000px;
+  height: auto;
+}
 .Garments1 {
   color: black;
   font-size: 30px;
   font-weight: bolder;
   margin-top: 160px;
   margin-left: 20px;
+  padding: 20px;
+  display: grid;
+  row-gap: 60px;
+
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: aqua;
+  width: auto;
+
+  .garment {
+    column-gap: 10px;
+    background-color: blanchedalmond;
+  }
+
+  img {
+    height: 300px;
+    width: 300px;
+  }
+}
+h1 {
+  margin-top: 120px;
+  text-align: center;
 }
 </style>

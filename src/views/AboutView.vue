@@ -23,7 +23,7 @@
         <p><a href="#">Mobile: +4670000000</a></p>
       </section>
       <section class="persons-2">
-        <img src="/images/Selli.jpg" alt="" height="300px" width="300px" />
+        <img src="/images/selli.jpg" alt="" height="300px" width="300px" />
         <p style="text-align: center">Selli</p>
         <p><a href="#">Email:selli1@gmail.com</a></p>
         <p><a href="#">Mobile: +4670000001</a></p>
