@@ -37,9 +37,8 @@ npm run lint
 
 changing
 Adding in browser
-Changing some thing, then git add . /git commit -m"..""/ git push/ git hub pull request/new pull request/ create/ approve pull request/ go to terminal / git fetch /git pull/ git checkout local branch name (working)/git merge (master)/git pull
+Changing some thing, then git add . /git commit -m"..""/ git push/ git hub pull request/new pull request/ create/ approve pull request/ go to terminal / git fetch/git status/git pull/ git checkout local branch name (working)/git merge (master)/git pull
 
-Incoming change:git fetchgit pullgit checkout <FeatureBranch>git merge maingit pull
-changing  
+Incoming change:git fetch git pull git checkout <FeatureBranch> git merge  main  git pull
+changing
 write something
-
