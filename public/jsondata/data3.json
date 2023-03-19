@@ -122,5 +122,6 @@
       "price": "1000kr/st",
       "img": "../images/nokhsikatha.jpg"
     }
-  ]
+  ],
+  "cart":[]
 }

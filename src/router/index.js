@@ -11,6 +11,8 @@ import SearchView from "../views/SearchView.vue";
 import ExistPageView from "../views/ExistPageView.vue";
 import GarmentsProducts from "../views/ProCatagoryView.vue/GarmentsProducts.vue";
 import GrossariesProducts from "../views/ProCatagoryView.vue/GrossariesProducts.vue";
+import CardView from "../views/CardView.vue";
+import CartView from "../views/CartView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -69,6 +71,16 @@ const router = createRouter({
       path: "/search",
       name: "search",
       component: SearchView,
+    },
+    {
+      path: "/card",
+      name: "card",
+      component: CardView,
+    },
+    {
+      path: "/cart",
+      name: "cart",
+      component: CartView,
     },
     // redirective will be used as a path instead of a current path
     // {

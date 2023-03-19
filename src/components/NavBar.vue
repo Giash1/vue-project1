@@ -9,15 +9,15 @@
       <RouterLink class="navbar-brand" to="/" style="margin-left: -15px"
         >Brothers Enterprise Limited Sweden AB</RouterLink
       >
-      <div style="display: flex; flex-direction: column">
+      <div style="display: flex; flex-direction: column; margin-right: 100px;">
         <router-link to="/search">
-          <p>
+
             <img
-              src="../../public/images/search-client.png"
+              src="/images/search-client.png"
               alt=""
               style="width: 100px; height: 100px"
             />
-          </p>
+
 
           <p
             style="
@@ -29,6 +29,16 @@
           >
             Search
           </p>
+        </router-link>
+      </div>
+      <div >
+        <router-link to="/cart" v-if="cart=!'cart'"> <img
+              src="/images/cart2.png"
+              alt=""
+              style="width: 100px; height: 100px;"
+            />
+
+
         </router-link>
       </div>
     </div>
@@ -95,6 +105,12 @@
           <li class="nav-item">
             <RouterLink class="nav-link" to="/search">Search</RouterLink>
           </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/card">Card</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/cart">Cart</RouterLink>
+          </li>
         </ul>
       </div>
     </div>
@@ -104,11 +120,22 @@
 </template>
 
 <script>
+
+
 export default {
-  data() {
-    return {};
-  },
+    data() {
+        return {
+            props:["page", "cart"],
+        };
+    },
+
+    methods: {
+        navigateTo(page){
+        this.page=page;
+    },
+    },
 };
+
 </script>
 
 <style scoped>
@@ -130,4 +157,5 @@ nav {
 .nav-link {
   color: black;
 }
+
 </style>

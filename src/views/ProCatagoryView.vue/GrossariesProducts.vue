@@ -1,19 +1,51 @@
 <template>
+    <div>
+        <div class="cart">
+
+
+<button  @click="navigateTo('cart')">
+  <p class="cartNumber">{{ cart.length }}</p>
+<img
+      src="/images/cart.png"
+      alt=""
+      style="width: 100px; height: 100px"
+    /></button>
+</div>
   <div class="Grossaries">
+
     <div class="router-link">
-      <div>Return to: <router-link to="/catagories">Catagories</router-link></div>
-      <div>Return to: <router-link to="/garments">Garments Products</router-link></div>
+      <div>
+      <button @click="navigateTo('grossaries') ">View Grossaries</button>
+    <br>
+        Return to: <router-link to="/garments">Garments Products</router-link>
+      </div>
     </div>
     <h1>{{ title }}</h1>
-    <div class="Grossaries1">
+    <h2 style="text-align: center; color:blue">Your cart</h2>
+    <div class="Grossaries1" v-if="page==='cart'">
+
+     <div v-for="(grossary,index) in cart" :key="index" class="garment">
+        <h2>{{ grossary.title }} {{ "." }} {{ grossary.price }}</h2>
+        <img v-bind:src="grossary.img" alt="" class="img" />
+        <br />
+        <button Link class="btn" @click="removeItem(index)" type="button"
+          >Remove</button
+        >
+      </div>
+
+    </div>
+    <div class="Grossaries1" v-if="page==='grossaries'">
       <div v-for="grossary in grossaries" :key="grossary.id" class="garment">
         <h2>{{ grossary.title }} {{ "." }} {{ grossary.price }}</h2>
         <img v-bind:src="grossary.img" alt="" class="img" />
         <br />
-        <router Link class="btn" @click="onClick" type="button" to="/mypage">Buy</router>
+        <button Link class="btn" @click="addItem(grossary)" type="button"
+          >Add to cart</button
+        >
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -23,12 +55,22 @@ export default {
     return {
       title: "Asian GrossariesProducts",
       grossaries: [],
+      cart:[],
+    //   page:"cart",
+      page:"grossaries",
     };
   },
   methods: {
-    onClick() {
-      this.$router.push("/mypage");
+    addItem(grossary) {
+        this.cart.push(grossary)
+    //   this.$router.push("/cart");
     },
+    navigateTo(page){
+        this.page=page;
+    },
+    removeItem(index){
+        this.cart.splice(index,1);
+    }
   },
   mounted() {
     fetch("http://localhost:3000/grossaries")
@@ -42,6 +84,11 @@ export default {
 body {
   width: 1000px;
   height: auto;
+}
+.cart{
+    position: absolute;
+    top:50;
+    right: 0;
 }
 .Grossaries1 {
   color: black;
@@ -65,5 +112,16 @@ body {
 h1 {
   margin-top: 120px;
   text-align: center;
+}
+
+.cart{
+    position: absolute;
+    margin-top: 0px;
+    margin-right: 0px;
+    .cartNumber{
+    color: crimson;
+    font-size: 40px;
+    height: 2px;
+}
 }
 </style>
